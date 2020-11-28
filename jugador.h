@@ -19,7 +19,7 @@ class Jugador {
         size_t getNumero();
 
         void setGoles(size_t goles);
-        size_t getGoles();
+        size_t getGoles() const;
 
         friend ostream& operator<<(ostream &out, const Jugador &j){
             out << left;

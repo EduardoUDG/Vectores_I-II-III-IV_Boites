@@ -20,6 +20,6 @@ void Jugador::setGoles(size_t goles){
     this->goles = goles;
 }
 
-size_t Jugador::getGoles(){
+size_t Jugador::getGoles() const{
     return goles;
 }

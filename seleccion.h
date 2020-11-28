@@ -16,7 +16,11 @@ public:
     void agregarInicio(const Jugador &j);
     void print();
 
-    
+    // aliminar
+    void eliminarNombre(const string &nombre);
+    void eliminarGoles();
+    void eliminarGoles(size_t goles);
+
 private:
     string nombre;
     list<Jugador> jugadores;
