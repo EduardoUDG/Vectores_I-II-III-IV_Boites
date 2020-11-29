@@ -21,6 +21,11 @@ public:
     void eliminarGoles();
     void eliminarGoles(size_t goles);
 
+    // ordenar
+    void ordenarNombre();    
+    void ordenarNumero();    
+    void ordenarGoles();    
+
 private:
     string nombre;
     list<Jugador> jugadores;

@@ -21,8 +21,13 @@ int main(){
     cout << endl << endl;
 
     // mexico.eliminarNombre();
-    mexico.eliminarGoles(3);
+    // mexico.eliminarGoles(3);
+
+    // mexico.ordenarNombre();
+    // mexico.ordenarNumero();
+
+    mexico.ordenarGoles();
     mexico.print();
 
-    return 0;
+    return 0; 
 } 

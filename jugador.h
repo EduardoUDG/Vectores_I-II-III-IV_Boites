@@ -13,10 +13,10 @@ class Jugador {
         : nombre(nombre), numero(numero), goles(goles) {}
 
         void setNombre(const string &nombre);
-        string getNombre();
+        string getNombre() const;
 
         void setNumero(size_t numero);
-        size_t getNumero();
+        size_t getNumero() const;
 
         void setGoles(size_t goles);
         size_t getGoles() const;
@@ -30,6 +30,9 @@ class Jugador {
             return out;
         }
 
+        bool operator<(const Jugador &j) const{
+            return nombre < j.getNombre();
+        }
 
     private:
         string nombre;

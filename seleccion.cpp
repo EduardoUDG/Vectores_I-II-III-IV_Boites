@@ -44,3 +44,19 @@ void Seleccion::eliminarGoles(){
 void Seleccion::eliminarGoles(size_t goles){
     jugadores.remove_if([goles](const Jugador &j){ return j.getGoles() >= goles; });
 }
+
+void Seleccion::ordenarNombre(){
+    jugadores.sort();
+}
+
+bool comparadorNumero(const Jugador &j1, const Jugador &j2){
+    return j1.getNumero() < j2.getNumero();
+}
+
+void Seleccion::ordenarNumero(){
+    jugadores.sort(comparadorNumero);
+}
+
+void Seleccion::ordenarGoles(){
+    jugadores.sort([](const Jugador &j1, const Jugador &j2){return j1.getGoles() > j2.getGoles();});
+}
